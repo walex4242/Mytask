@@ -7,7 +7,7 @@ import "./navbar.css";
 
 const AppNav = () => {
   return (
-    <Navbar bg="light" expand="sm" className="shadow" >
+    <Navbar bg="light" expand="sm" className="shadow">
       <Container>
         <Navbar.Brand>
           <Link
@@ -29,10 +29,9 @@ const AppNav = () => {
             </Link>
             <Link to="/create" className="app-nav-links">
               {" "}
-              Add Product{" "}
+              ADD{" "}
             </Link>{" "}
-            <Link to="/cart" className="app-nav-links mx-md-2 my-3">
-            </Link>
+            <Link to="/cart" className="app-nav-links mx-md-2 my-3"></Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

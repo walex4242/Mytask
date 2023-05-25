@@ -115,7 +115,7 @@ export const Shop = () => {
               className="btn btn-danger text-capitalize mx-2"
               onClick={(e) => handleClick(e)}
             >
-              mass delete
+              MASS DELETE
             </button>
 
             <button
@@ -123,7 +123,7 @@ export const Shop = () => {
               onClick={(e) => handleClick(e)}
             >
               <Link to="/create" className="text-decoration-none text-light">
-                create
+                ADD
               </Link>
             </button>
           </div>

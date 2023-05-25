@@ -58,7 +58,7 @@ export default function AddProduct() {
   return (
     <section className="my-3 p-3">
       <h4 className="fw-bold text-capitalize text-center my-md-3 my-5">
-        Add new product
+        Add New Product
       </h4>
       <form
         className="width-toggle-2 m-auto"
@@ -124,7 +124,7 @@ export default function AddProduct() {
             }}
             disabled={buttonDisabled}
           >
-            create
+            ADD
           </button>
 
           <button

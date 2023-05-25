@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "env-cmd": "^10.1.0",
     "jquery": "^3.7.0",
     "methane-cli": "^1.0.9",
     "phosphor-react": "^1.4.1",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:staging": "env-cmd -f .env.staging yarn run build"
   },
   "eslintConfig": {
     "extends": [
