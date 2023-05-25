@@ -11,6 +11,7 @@ export const DVDFormDescription = () => {
           placeholder="Enter dvd size"
           name="product_size"
           required
+          id="size"
         />
       </Form.Group>
     </section>
@@ -28,6 +29,7 @@ export const FurnitureFormDescription = () => {
           placeholder="Enter furniture height"
           name="product_height"
           required
+          id="height"
         />
       </Form.Group>
 
@@ -39,6 +41,7 @@ export const FurnitureFormDescription = () => {
           placeholder="Enter furniture width"
           name="product_width"
           required
+          id="width"
         />
       </Form.Group>
 
@@ -50,6 +53,7 @@ export const FurnitureFormDescription = () => {
           placeholder="Enter furniture length"
           name="product_length"
           required
+          id="length"
         />
       </Form.Group>
     </section>
@@ -67,6 +71,7 @@ export const BookFormDescription = () => {
           placeholder="Enter book weight"
           name="product_weight"
           required
+          id="weight"
         />
       </Form.Group>
     </section>

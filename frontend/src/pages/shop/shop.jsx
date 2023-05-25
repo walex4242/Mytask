@@ -114,6 +114,7 @@ export const Shop = () => {
               type="submit"
               className="btn btn-danger text-capitalize mx-2"
               onClick={(e) => handleClick(e)}
+              id="delete-product-btn"
             >
               MASS DELETE
             </button>

@@ -62,7 +62,7 @@ export default function AddProduct() {
       </h4>
       <form
         className="width-toggle-2 m-auto"
-        id="form"
+        id="product_form"
         method="POST"
         onSubmit={(e) => handleSubmitClick(e)}
       >
@@ -76,6 +76,7 @@ export default function AddProduct() {
             className="form-control"
             name="product_name"
             required
+            id="name"
           />
         </section>
 
@@ -90,6 +91,7 @@ export default function AddProduct() {
             className="form-control"
             name="product_price"
             required
+            id="price"
           />
         </section>
 
@@ -102,11 +104,16 @@ export default function AddProduct() {
             onChange={(e) => handleFormTypeToggle(e)}
             className="my-2"
           >
-            <Form.Select size="sm" name="product_type" required>
+            <Form.Select
+              size="sm"
+              name="product_type"
+              required
+              id="productType"
+            >
               <option value="NULL">SELECT</option>
-              <option value="0">DVD </option>
-              <option value="1">Furniture</option>
-              <option value="2">Book</option>
+              <option value="0" id="DVD">DVD </option>
+              <option value="1" id="Furniture">Furniture</option>
+              <option value="2" id="Book">Book</option>
             </Form.Select>
           </Form.Group>
         </section>
