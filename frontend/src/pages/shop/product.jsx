@@ -29,6 +29,7 @@ export const Product = ({
     let type = "";
     switch (productType) {
       case "0":
+      
         type = "Size";
         break;
 

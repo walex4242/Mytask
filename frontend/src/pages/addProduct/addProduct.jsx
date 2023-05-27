@@ -110,7 +110,7 @@ export default function AddProduct() {
             Type Switcher
           </label>
           <Form.Group
-            controlId="prouctType"
+            controlId="productType"
             onChange={(e) => handleFormTypeToggle(e)}
             className="my-2"
           >
@@ -122,7 +122,7 @@ export default function AddProduct() {
             >
               <option value="NULL">SELECT</option>
               <option value="0" id="DVD">
-                DVD{" "}
+                DVD
               </option>
               <option value="1" id="Furniture">
                 Furniture
