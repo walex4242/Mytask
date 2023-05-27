@@ -111,7 +111,6 @@ export const Shop = () => {
         {dataFound ? (
           <div className="d-flex align-items-center justify-content-end p-2 my-3">
             <button
-              type="submit"
               className="btn btn-danger text-capitalize mx-2"
               onClick={(e) => handleClick(e)}
               id="delete-product-btn"
@@ -134,7 +133,7 @@ export const Shop = () => {
             onClick={(e) => handleClick(e)}
           >
             <Link to="/create" className="text-decoration-none text-light">
-              create
+              ADD
             </Link>
           </button>
         )}

@@ -65,21 +65,19 @@ export default function AddProduct() {
         id="product_form"
         method="POST"
         onSubmit={(e) => handleSubmitClick(e)}
-      >     <section>
-          <label htmlFor="product_name" className="my-2">
+      >
+        {" "}
+        <section>
+          <label htmlFor="sku" className="my-2">
             SkU
           </label>
           <input
             type="text"
-            placeholder="Product name"
-            className="form-control d-none"
-            name="product_name"
-            required
+            placeholder="sku"
+            className="form-control"
             id="sku"
-            hidden
           />
         </section>
-      
         <section>
           <label htmlFor="product_name" className="my-2">
             Product name
@@ -93,7 +91,6 @@ export default function AddProduct() {
             id="name"
           />
         </section>
-
         <section>
           <label htmlFor="product_price" className="my-2">
             Product price
@@ -108,7 +105,6 @@ export default function AddProduct() {
             id="price"
           />
         </section>
-
         <section className="form-switcher my-2" id="productType">
           <label htmlFor="type_switcher" className="my-2 fw-bold">
             Type Switcher
@@ -125,17 +121,21 @@ export default function AddProduct() {
               id="productType"
             >
               <option value="NULL">SELECT</option>
-              <option value="0" id="DVD">DVD </option>
-              <option value="1" id="Furniture">Furniture</option>
-              <option value="2" id="Book">Book</option>
+              <option value="0" id="DVD">
+                DVD{" "}
+              </option>
+              <option value="1" id="Furniture">
+                Furniture
+              </option>
+              <option value="2" id="Book">
+                Book
+              </option>
             </Form.Select>
           </Form.Group>
         </section>
-
         <section className="product-description-container">
           {formToRender && formToRender}
         </section>
-
         <section className="my-4 d-flex align-items-center justify-content-between">
           <button
             type="submit"

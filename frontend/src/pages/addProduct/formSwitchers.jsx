@@ -3,15 +3,15 @@ import { Form } from "react-bootstrap";
 export const DVDFormDescription = () => {
   return (
     <section className="dvd-form-description my-2">
-      <Form.Group controlId="DVD">
+      <Form.Group controlId="size">
         <Form.Label className="small">Size {"(Mb)"}</Form.Label>
         <Form.Control
           type="number"
           min="1"
           placeholder="Enter dvd size"
           name="product_size"
-          required
           id="size"
+          required
         />
       </Form.Group>
     </section>
@@ -21,7 +21,7 @@ export const DVDFormDescription = () => {
 export const FurnitureFormDescription = () => {
   return (
     <section className="furniture-form-description my-2">
-      <Form.Group controlId="Furniture">
+      <Form.Group controlId="height">
         <Form.Label className="small">Height {"(CM)"}</Form.Label>
         <Form.Control
           type="number"
@@ -33,27 +33,27 @@ export const FurnitureFormDescription = () => {
         />
       </Form.Group>
 
-      <Form.Group controlId="Furniture">
+      <Form.Group controlId="width">
         <Form.Label className="small">Width {"(CM)"}</Form.Label>
         <Form.Control
           type="number"
           min="1"
           placeholder="Enter furniture width"
           name="product_width"
-          required
           id="width"
+          required
         />
       </Form.Group>
 
-      <Form.Group controlId="Furniture">
+      <Form.Group controlId="length">
         <Form.Label className="small">Length {"(CM)"}</Form.Label>
         <Form.Control
           type="number"
           min="1"
           placeholder="Enter furniture length"
           name="product_length"
-          required
           id="length"
+          required
         />
       </Form.Group>
     </section>
@@ -63,7 +63,7 @@ export const FurnitureFormDescription = () => {
 export const BookFormDescription = () => {
   return (
     <section className="book-form-description my-2">
-      <Form.Group controlId="Book">
+      <Form.Group controlId="weight">
         <Form.Label className="small">Weight {"(KG)"}</Form.Label>
         <Form.Control
           type="number"

@@ -2,7 +2,7 @@ import $ from "jquery";
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  const form = document.getElementById("form");
+  const form = document.getElementById("product_form");
   const formData = new FormData(form);
 
   return $.ajax({
