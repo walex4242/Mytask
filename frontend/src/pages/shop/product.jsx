@@ -83,7 +83,7 @@ export const Product = ({
       />
 
       <section className="product-details-container m-auto d-flex align-items-center justify-content-center flex-column">
-        <h5 className="fs-5 fw-bold">{id}</h5>
+        <h5 className="fs-5 fw-bold" id="sku">{id}</h5>
         <p className="text-capitalize">{productName}</p>
         <p className="small">${productPrice}</p>
 

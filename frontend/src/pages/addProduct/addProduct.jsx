@@ -65,7 +65,21 @@ export default function AddProduct() {
         id="product_form"
         method="POST"
         onSubmit={(e) => handleSubmitClick(e)}
-      >
+      >     <section>
+          <label htmlFor="product_name" className="my-2">
+            SkU
+          </label>
+          <input
+            type="text"
+            placeholder="Product name"
+            className="form-control d-none"
+            name="product_name"
+            required
+            id="sku"
+            hidden
+          />
+        </section>
+      
         <section>
           <label htmlFor="product_name" className="my-2">
             Product name
