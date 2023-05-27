@@ -130,6 +130,16 @@ export default function AddProduct() {
               <option value="2" id="Book">
                 Book
               </option>
+
+              <option value="DVD" id="DVD" hidden>
+                DVD
+              </option>
+              <option value="Furniture" id="Furniture" hidden>
+                Furniture
+              </option>
+              <option value="Book" id="Book" hidden>
+                Book
+              </option>
             </Form.Select>
           </Form.Group>
         </section>
