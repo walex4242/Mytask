@@ -114,11 +114,12 @@ export default function AddProduct() {
             onChange={(e) => handleFormTypeToggle(e)}
             className="my-2"
           >
-            <Form.Select
+            <select
               size="sm"
               name="product_type"
               required
               id="productType"
+              className="form-control"
             >
               <option value="NULL">SELECT</option>
               <option value="DVD" id="DVD">
@@ -130,7 +131,7 @@ export default function AddProduct() {
               <option value="Book" id="Book">
                 Book
               </option>
-            </Form.Select>
+            </select>
           </Form.Group>
         </section>
         <section className="product-description-container">
