@@ -47,9 +47,10 @@ export default function AddProduct() {
     <React.Fragment></React.Fragment>
   );
 
+  const selectValueRessolver = ["DVD", "Furniture", "Book"];
   const handleFormTypeToggle = (e) => {
     for (let i = 0; i < differentFormArray.length; i++) {
-      if (parseInt(e.target.value) === i) {
+      if (selectValueRessolver.indexOf(e.target.value) === i) {
         setFormToRender(differentFormArray[i]);
       }
     }
@@ -121,19 +122,15 @@ export default function AddProduct() {
               id="productType"
             >
               <option value="NULL">SELECT</option>
-              <option value="0" id="DVD">
+              <option value="DVD" id="DVD">
                 DVD
               </option>
-              <option value="1" id="Furniture">
+              <option value="Furniture" id="Furniture">
                 Furniture
               </option>
-              <option value="2" id="Book">
+              <option value="Book" id="Book">
                 Book
               </option>
-
-              <option value="DVD" id="DVD"></option>
-              <option value="Furniture" id="Furniture"></option>
-              <option value="Book" id="Book"></option>
             </Form.Select>
           </Form.Group>
         </section>

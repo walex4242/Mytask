@@ -28,16 +28,16 @@ export const Product = ({
   const handleType = (productType) => {
     let type = "";
     switch (productType) {
-      case "0":
+      case "DVD":
       
         type = "Size";
         break;
 
-      case "1":
+      case "Furniture":
         type = "Dimension";
         break;
 
-      case "2":
+      case "Book":
         type = "Weight";
         break;
 
