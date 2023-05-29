@@ -110,29 +110,24 @@ export default function AddProduct() {
           <label htmlFor="type_switcher" className="my-2 fw-bold">
             Type Switcher
           </label>
-          <Form.Group
+
+          <select
+            class="form-select"
+            aria-label="Select example"
             onChange={(e) => handleFormTypeToggle(e)}
             className="my-2"
           >
-            <select
-              size="sm"
-              name="product_type"
-              required
-              id="productType"
-              className="form-control"
-            >
-              <option value="NULL">SELECT</option>
-              <option value="DVD" id="DVD">
-                DVD
-              </option>
-              <option value="Furniture" id="Furniture">
-                Furniture
-              </option>
-              <option value="Book" id="Book">
-                Book
-              </option>
-            </select>
-          </Form.Group>
+            <option value="NULL">SELECT</option>
+            <option value="DVD" id="DVD">
+              DVD
+            </option>
+            <option value="Furniture" id="Furniture">
+              Furniture
+            </option>
+            <option value="Book" id="Book">
+              Book
+            </option>
+          </select>
         </section>
         <section className="product-description-container">
           {formToRender && formToRender}
