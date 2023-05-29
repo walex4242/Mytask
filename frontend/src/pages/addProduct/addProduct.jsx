@@ -106,7 +106,7 @@ export default function AddProduct() {
             id="price"
           />
         </section>
-        <section className="form-switcher my-2" id="productType">
+        <section className="form-switcher my-2">
           <label htmlFor="type_switcher" className="my-2 fw-bold">
             Type Switcher
           </label>
