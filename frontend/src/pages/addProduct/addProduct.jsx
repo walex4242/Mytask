@@ -111,7 +111,6 @@ export default function AddProduct() {
             Type Switcher
           </label>
           <Form.Group
-            controlId="productType"
             onChange={(e) => handleFormTypeToggle(e)}
             className="my-2"
           >
