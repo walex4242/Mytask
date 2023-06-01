@@ -139,7 +139,7 @@ export const Shop = () => {
         )}
       </div>
 
-      <div className="all-products-container d-flex align-items-center flex-md-row justify-content-around flex-column">
+      <div className="all-products-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {!dataArrived ? (
           <div className="my-5 p-5 d-flex align-items-center justify-content-center m-auto">
             <Spinner animation="border" variant="secondary" />
